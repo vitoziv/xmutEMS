@@ -1,0 +1,9 @@
+<resources>
+<!-- <style name="AppTheme" parent="AppThemeDark" /> -->
+<!-- <style name="AppTheme" parent="@style/Theme.Sherlock.Light.DarkActionBar" />  -->
+
+<style name="AppTheme" parent="Theme.Sherlock">
+    <item name="switchStyle">@style/switch_dark</item>
+    <item name="textAppearance">@style/TextAppearance</item>
+</style>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/loginbg" >
+    
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    
+    <EditText android:id="@+id/stuNO" 
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:hint="@string/stuNOHint"
+        android:layout_below="@+id/logo"/>
+    
+    <EditText android:id="@+id/password" 
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/stuPasswordHint"
+        android:inputType="textPassword"
+        android:layout_below="@+id/stuNO"/>
+	
+    <EditText android:id="@+id/checkCode" 
+        android:layout_height="50dp"
+        android:layout_width="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:inputType="text"
+        android:hint="@string/checkCode"
+        android:layout_below="@+id/password"/>
+    
+    <ImageView android:id="@+id/checkCodeImage"
+        android:layout_height="50dp"
+        android:layout_width="111dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/checkCode"
+        android:layout_toRightOf="@+id/checkCode"
+        android:layout_below="@+id/password"
+        android:clickable="true"/>
+    
+    <Button android:id="@+id/submitBtn"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/submit"
+        android:textColor="#fff"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkCode"
+        android:background="@drawable/btn_bg"
+        android:shadowColor="#000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"/>
+</RelativeLayout>

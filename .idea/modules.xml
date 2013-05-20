@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XmutEMS/XmutEMS.iml" filepath="$PROJECT_DIR$/XmutEMS/XmutEMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpush/jpush.iml" filepath="$PROJECT_DIR$/jpush/jpush.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pinterest-like-adapter-view-master/pinterest-like-adapter-view-master.iml" filepath="$PROJECT_DIR$/pinterest-like-adapter-view-master/pinterest-like-adapter-view-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/slidingMenulibrary/slidingMenulibrary.iml" filepath="$PROJECT_DIR$/slidingMenulibrary/slidingMenulibrary.iml" />
+    </modules>
+  </component>
+</project>
+

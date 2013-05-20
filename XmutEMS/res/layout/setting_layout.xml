@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f6f2eb"
+    android:padding="15dp" xmlns:app="http://schemas.android.com/apk/res/com.vito.xmutems">
+
+    <de.ankri.views.Switch
+        android:id="@+id/reciveNoticeSwitch"
+        android:background="#E5E1DC"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textOn="On"
+        android:textOff="Off"
+        android:text="接收消息推送"
+        android:textSize="20sp"
+        android:checked="true"
+        android:layout_marginBottom="15dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#E5E1DC"
+        android:padding="10dp">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="密码修改"
+	        android:textSize="20sp"
+	        android:textColor="#111111"
+	        android:paddingBottom="15dp" />
+	
+	    <EditText
+	        android:id="@+id/oldPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPassword"
+	        android:hint="旧的密码" />
+	
+	    <EditText
+	        android:id="@+id/newPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPassword"
+	        android:hint="新的密码" />
+	
+	    <EditText
+	        android:id="@+id/reTypeNewPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textPassword"
+	        android:hint="再次输入新的密码" />
+	
+	    <Button
+	        android:id="@+id/submit"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="提交" />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

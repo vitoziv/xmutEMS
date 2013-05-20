@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#1f1f1f"
+	    android:paddingLeft="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingTop="17dp"
+	    android:paddingBottom="17dp" >
+	    <TextView
+	        android:layout_height="40dp"
+	        android:layout_width="wrap_content"
+	        android:text="学年"
+	        android:textSize="16sp"
+	        android:textColor="#EEEEEE" />
+
+	    <Spinner 
+	        android:id="@+id/yearPicker"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"/>
+	    
+	    <TextView
+	        android:layout_height="40dp"
+	        android:layout_width="wrap_content"
+	        android:text="学期"
+	        android:textSize="16sp"
+	        android:textColor="#EEEEEE" />
+
+	    <Spinner 
+	        android:id="@+id/semesterPicker"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"/>
+	    
+	    <Button 
+	        android:id="@+id/searchBtn"
+	        android:layout_width="60dp"
+	        android:layout_height="40dp"
+	        android:text="查询"/>
+	</LinearLayout>
+	
+    <!-- <GridView 
+	    android:id="@+id/examGridView"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+    	android:numColumns="2"  
+    	android:stretchMode="columnWidth" 
+	    /> -->
+	<com.huewu.pla.lib.MultiColumnListView
+	    android:id="@+id/mListView"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+	    />
+</LinearLayout>

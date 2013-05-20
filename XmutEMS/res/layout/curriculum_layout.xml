@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        
+        
+		<TextView
+	        android:id="@+id/barTitle"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/curriculum"
+	        android:textColor="#DDDDDD"
+	        android:textSize="18sp"
+	        android:shadowColor="#000000"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:shadowRadius="1" />    
+
+</LinearLayout>

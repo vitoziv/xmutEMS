@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- <RelativeLayout 
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:background="#555555"
+        android:padding="5dp">
+        
+        <Button 
+            android:id="@+id/menuBtn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/menu"
+            android:textColor="#DDDDDD"
+            android:textSize="16sp"
+            android:background="#222222"
+        	android:paddingLeft="10dp"
+        	android:paddingRight="10dp"
+        	android:paddingTop="5dp"
+        	android:paddingBottom="5dp"
+        	android:layout_alignParentLeft="true"/>
+        
+        
+		<TextView
+	        android:id="@+id/barTitle"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="@string/notification"
+	        android:textColor="#DDDDDD"
+	        android:textSize="18sp"
+	        android:shadowColor="#000000"
+	        android:shadowDx="1"
+	        android:shadowDy="1"
+	        android:shadowRadius="1"
+	        android:layout_centerInParent="true" />
+        
+    </RelativeLayout> -->
+    
+	
+	<ListView 
+	    android:id="@+id/notificationList"
+	    android:layout_height="match_parent"
+	    android:layout_width="match_parent"
+   		android:background="#f6f2eb"
+   		android:divider="#EEEEEE"  
+    	android:dividerHeight="1dp"/>
+	
+</LinearLayout>

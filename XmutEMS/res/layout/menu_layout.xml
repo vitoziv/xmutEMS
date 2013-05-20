@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#232323" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="#1c1b1b">
+        
+	    <ImageView 
+	        android:id="@+id/headPortrait"
+	        android:layout_width="70dp"
+	        android:layout_height="80dp"
+	        android:layout_marginRight="15dp"
+	        android:background="#fff"
+	        android:contentDescription="@string/userPortrait"/>
+	    
+	    <TextView android:id="@+id/college"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/headPortrait"
+	        android:text="商学院"
+	        android:textColor="#efefef"
+	        android:textSize="16sp"
+	        android:paddingBottom="5dp"/>
+	    
+	    <TextView android:id="@+id/gradeClass"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/headPortrait"
+	        android:layout_below="@+id/college"
+	        android:text="09电子商务一班"
+	        android:textColor="#efefef"
+	        android:textSize="16sp"
+	        android:paddingBottom="5dp"/>
+	    
+	    <TextView android:id="@+id/stuName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/headPortrait"
+	        android:layout_below="@+id/gradeClass"
+	        android:textColor="#efefef"
+	        android:textSize="16sp"/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/notification"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/notification"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#efefef"
+        android:onClick="menuItemClick"
+        android:clickable="true"
+        android:background="@drawable/menu_bg" />
+    <TextView
+        android:id="@+id/curriculum"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/curriculum"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#efefef"
+        android:onClick="menuItemClick"
+        android:clickable="true"
+        android:background="@drawable/menu_bg" />
+    <TextView
+        android:id="@+id/score"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/score"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#efefef"
+        android:onClick="menuItemClick"
+        android:clickable="true"
+        android:background="@drawable/menu_bg" />
+    <TextView
+        android:id="@+id/exam"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/exam"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#efefef"
+        android:onClick="menuItemClick"
+        android:clickable="true"
+        android:background="@drawable/menu_bg" />
+    <TextView
+        android:id="@+id/settings"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/settings"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#efefef"
+        android:onClick="menuItemClick"
+        android:clickable="true"
+        android:background="@drawable/menu_bg" />
+
+</LinearLayout>
