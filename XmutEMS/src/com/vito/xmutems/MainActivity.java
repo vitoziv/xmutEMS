@@ -3,7 +3,9 @@ package com.vito.xmutems;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import android.content.Intent;
 import android.graphics.Canvas;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -164,6 +166,9 @@ public class MainActivity extends SlidingFragmentActivity {
 				setTitle(getString(R.string.settings));
 				newContent = new SettingFragment();
 				break;
+			case R.id.feedback:
+				sendFeedbackEmail();
+				break;
 		}
 		if (newContent != null)
 			switchContent(newContent);
@@ -178,4 +183,17 @@ public class MainActivity extends SlidingFragmentActivity {
 		getSlidingMenu().showContent();
 	}
 	
+	public void sendFeedbackEmail() {
+		Intent intent = new Intent(Intent.ACTION_SENDTO); 
+		intent.setType("text/plain");
+		intent.putExtra(Intent.EXTRA_SUBJECT, "意见反馈");
+		intent.putExtra(Intent.EXTRA_TEXT, "\n\n\n\n--" + CacheProvider.get(MainActivity.this, "stuName"));
+		intent.setData(Uri.parse("mailto:zhangwei.noair@gmail.com"));
+		intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); 
+		try{
+			startActivity(intent);
+		} catch (Exception e){
+			Toast.makeText(MainActivity.this, "没有找到您的邮箱账户", Toast.LENGTH_LONG).show();
+		}
+	}
 }

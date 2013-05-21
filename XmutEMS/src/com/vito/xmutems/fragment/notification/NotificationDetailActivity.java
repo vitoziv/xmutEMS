@@ -12,6 +12,7 @@ import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
+import com.actionbarsherlock.view.MenuItem;
 import com.vito.xmutems.R;
 import com.vito.xmutems.domain.Notification;
 import com.vito.xmutems.utils.HttpClientFactory;
@@ -71,6 +72,16 @@ public class NotificationDetailActivity extends Activity {
 			link.setText(Html.fromHtml(result[1]));
 			super.onPostExecute(result);
 		}
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(android.view.MenuItem item) {
+		switch (item.getItemId()) {
+		case android.R.id.home:
+			super.onBackPressed();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 	
 	//解析下载的url
