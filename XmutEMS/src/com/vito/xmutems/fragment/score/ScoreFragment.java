@@ -106,7 +106,7 @@ public class ScoreFragment extends Fragment {
 						"学分：" + score.getCredits() + "\n" +
 						"绩点：" + score.getGradePoint() + "\n" +
 						"课程性质：" + score.getType();
-						DialogUtil.showMsg(getActivity(), content);
+				DialogUtil.showMsg(getActivity(), score.getName(), content);
 			}
 		});
 	}

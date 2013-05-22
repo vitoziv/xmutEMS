@@ -7,12 +7,12 @@ import org.jsoup.select.Elements;
 
 import android.app.Activity;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
-import com.actionbarsherlock.view.MenuItem;
 import com.vito.xmutems.R;
 import com.vito.xmutems.domain.Notification;
 import com.vito.xmutems.utils.HttpClientFactory;
@@ -28,6 +28,11 @@ public class NotificationDetailActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_notification_detail);
 		setTitle(getString(R.string.notification));
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+        	getActionBar().setHomeButtonEnabled(true);
+        	getActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.actionbar_bg));
+        }
+		
 		title = (TextView) findViewById(R.id.title);
 		body = (TextView) findViewById(R.id.body);
 		link = (TextView) findViewById(R.id.link);

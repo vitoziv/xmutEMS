@@ -6,7 +6,7 @@
     <LinearLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:background="#1f1f1f"
+	    android:background="@drawable/search_bg"
 	    android:paddingLeft="10dp"
 	    android:paddingRight="10dp"
 	    android:paddingTop="17dp"
@@ -39,6 +39,8 @@
 	        android:id="@+id/searchBtn"
 	        android:layout_width="60dp"
 	        android:layout_height="40dp"
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/search_btn_bg"
 	        android:text="查询"/>
 	</LinearLayout>
 	

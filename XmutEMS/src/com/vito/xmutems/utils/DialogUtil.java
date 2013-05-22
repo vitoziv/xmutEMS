@@ -14,9 +14,9 @@ import android.widget.EditText;
  *
  */
 public class DialogUtil {
-	public static void showMsg(Context c, String content) {
+	public static void showMsg(Context c, String title, String content) {
 		Builder builder = new AlertDialog.Builder(c);
-		builder.setTitle("提示");
+		builder.setTitle(title);
 		builder.setMessage(content);
 		builder.setNeutralButton("确定", new DialogInterface.OnClickListener() {
 			@Override
@@ -26,6 +26,10 @@ public class DialogUtil {
 		});
 		AlertDialog dialog = builder.create();
 		dialog.show();
+	}
+	
+	public static void showMsg(Context c, String content) {
+		showMsg(c, "提示", content);
 	}
 
 	public static void showMsg(Context c, String content,
