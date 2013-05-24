@@ -10,4 +10,7 @@
     <color name="maincolor">#2d3747</color>
     <color name="mainbgcolor">#FAFAFA</color>
     
+    <color name="loginBtnBgNoraml">#fd4549</color>
+    <color name="loginBtnBgPressed">#b32d30</color>
+    
 </resources>
